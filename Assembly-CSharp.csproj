@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{A221FB21-C95E-ED99-5653-0DE395CA7BCC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_3;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;CROSS_PLATFORM_INPUT</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Acrocatic\Scripts\General\CameraFollow.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\General\CameraShake.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\General\Death.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\General\GameSettings.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\General\Ladder.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\General\ShowCollider.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\General\Spring.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Platforms\JumpThroughDown.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Platforms\JumpThroughUp.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Platforms\Platform.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Platforms\PlatformJumpThrough.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Platforms\PlatformMove.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Platforms\PlatformSink.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\PlayerCrouch.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\PlayerDash.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\PlayerHitbox.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\PlayerJump.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\PlayerLadder.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\PlayerPlatform.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\PlayerRun.cs" />
+     <Compile Include="Assets\Acrocatic\Scripts\Player\PlayerWall.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\Bullet.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Example for EasyButton\ETPlayer.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyJoystick\Example-thirdPerson_DirectEventMode\JoystickEvent.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyJoystick\Example_FirstPerson_DirectMode\GUIFirstDirect.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyJoystick\ExitButton.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-FreeCam\FreeCam.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-FreeCam\GuiCam.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-ManipulationImage\GuiPhoto.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-ManipulationImage\Photo.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-MultiLayer\GuiLayer.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-MultiLayer\TouchLayer.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-Multiplefingers\GuiMultiFinger.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-Multiplefingers\ObjectTouch.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-Multiplefingers\ScreenTouch.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-Multiplefingers\SlowRotate.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\DoubleTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\Drag.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\GuiOneFinger.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\LongTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\Swipe.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\Tap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-OneFinger\TouchStart.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-StartMenu\GuiStartMenu.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\GuiTwoFinger.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\Pinch.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\Twist.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoDoubleTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoDrag.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoLongTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoSwipe.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoTap.cs" />
+     <Compile Include="Assets\EasyTouch\Example\C# Example\Examples for EasyTouch\Example-TwoFinger\TwoTouchStart.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\EasyButton.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\EasyJoystick.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\EasyTouch.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\EasyTouchInput.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Finger.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\Gesture.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\MonoSingleton.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\MovingJoystick.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\VirtualScreen.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\_C#-Event-Template\C_EasyButtonTemplate.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\_C#-Event-Template\C_EasyJoystickTemplate.cs" />
+     <Compile Include="Assets\EasyTouch\Plugins\_C#-Event-Template\C_EasyTouchTemplate.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutodestructWhenNoChildren.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_ShurikenThreadFix.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Spawn System\CFX_SpawnSystem.cs" />
+     <Compile Include="Assets\Line\scr\XLine.cs" />
+     <Compile Include="Assets\Script\AchieveTrigger.cs" />
+     <Compile Include="Assets\Script\AsynLevLoad.cs" />
+     <Compile Include="Assets\Script\BeltReviseTrriger.cs" />
+     <Compile Include="Assets\Script\CheckPoint.cs" />
+     <Compile Include="Assets\Script\CheckPointInfo.cs" />
+     <Compile Include="Assets\Script\DurBlock.cs" />
+     <Compile Include="Assets\Script\FxCreator.cs" />
+     <Compile Include="Assets\Script\GamingEvent.cs" />
+     <Compile Include="Assets\Script\JumpingBlock.cs" />
+     <Compile Include="Assets\Script\LevelComplete.cs" />
+     <Compile Include="Assets\Script\MyEditor\CheckPointSelector.cs" />
+     <Compile Include="Assets\Script\MyEditor\EditorArrow.cs" />
+     <Compile Include="Assets\Script\MyEditor\EditorManager.cs" />
+     <Compile Include="Assets\Script\MyEditor\ObjSelector.cs" />
+     <Compile Include="Assets\Script\MyEditor\Panels\CheckPointPanel.cs" />
+     <Compile Include="Assets\Script\MyEditor\Panels\RipPanel.cs" />
+     <Compile Include="Assets\Script\MyEditor\RipSelector.cs" />
+     <Compile Include="Assets\Script\MyEditor\SoapEditorSerialize.cs" />
+     <Compile Include="Assets\Script\PlayMov.cs" />
+     <Compile Include="Assets\Script\PlayerMadeLevInit.cs" />
+     <Compile Include="Assets\Script\SnowBall.cs" />
+     <Compile Include="Assets\Script\SnowSpawn.cs" />
+     <Compile Include="Assets\Script\Test.cs" />
+     <Compile Include="Assets\Script\UI\AchieveButton.cs" />
+     <Compile Include="Assets\Script\UI\AchieveLabel.cs" />
+     <Compile Include="Assets\Script\UI\AudioListenerCtrl.cs" />
+     <Compile Include="Assets\Script\UI\LevEnterButton.cs" />
+     <Compile Include="Assets\Script\UI\LevSelCtrl.cs" />
+     <Compile Include="Assets\Script\UI\LevSelectEvent.cs" />
+     <Compile Include="Assets\Script\UI\LoadingScene.cs" />
+     <Compile Include="Assets\Script\UI\MainMenuEvent.cs" />
+     <Compile Include="Assets\Script\UI\MoveJoyStick.cs" />
+     <Compile Include="Assets\Script\UI\PlayerMadeLevEvent.cs" />
+     <Compile Include="Assets\Script\UI\ShowCup.cs" />
+     <Compile Include="Assets\Script\UI\StatisticsPanel.cs" />
+     <Compile Include="Assets\Script\UI\WorkShopEvent.cs" />
+     <Compile Include="Assets\Snow\Snow.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Demo\Scripts\DemoGUIWindow.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Demo\Scripts\DemoMainMenu.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Demo\Scripts\DemoSubMenu.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Scripts\Internal\Constants\Constants.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Scripts\Internal\DataTypes\UpdateInfo\ProductUpdateInfo.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Scripts\Internal\PromptWindow\UpdatePromptWindow.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Scripts\Product\AssetStoreProduct.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\AssetStoreProductUtility\AssetStoreProduct\Scripts\Product\IAssetStoreProduct.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\DesignPatterns\Scripts\ObserverPattern\IObserver.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\DesignPatterns\Scripts\ObserverPattern\ObserverPattern.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\DesignPatterns\Scripts\SingletonPattern\ISingleton.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\DesignPatterns\Scripts\SingletonPattern\SingletonPattern.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\AndroidManifest\AndroidManifestGenerator.Feature.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\AndroidManifest\AndroidManifestGenerator.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\GlobalDefines\GlobalDefinesManager.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\Shader\PropertyImporter\ShaderPropertyImporter.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\Shader\Utility\ShaderUtility.Menu.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\Shader\Utility\ShaderUtility.ShaderInfo.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\Shader\Utility\ShaderUtility.ShaderProperty.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\Shader\Utility\ShaderUtility.ShaderPropertyType.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\Shader\Utility\ShaderUtility.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\StrippingBlacklist\StrippingBlacklistGenerator.BlacklistedAssembly.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Automators\Script\StrippingBlacklist\StrippingBlacklistGenerator.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Assets\AssetsExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Component\ComponentExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\DateTime\DateTimeExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Enumeration\EnumerationExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\GameObject\GameObjectExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\GenericTypes\IDictionaryExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Generics\GenericsExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\IO\IOExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\MonoBehaviour\MonoBehaviourExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\PlayerSettings\PlayerSettings.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Reflection\ReflectionExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\ScriptableObject\AdvancedScriptableObject.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\String\StringExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Texture\TextureExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Transform\TransformExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Type\TypeExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Extensions\Scripts\Vector\VectorExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\IO\Scripts\FileOperations.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Demo\Script\JSON\JSONDemo.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Demo\Script\Plist\PlistDemo.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\Extensions\JSONParserExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\Internal\Constants\Constants.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\Internal\DataTypes\Enums\Enums.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\Internal\DataTypes\JSONString\JSONString.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\JSONReader.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\JSONUtility.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Scripts\JSON\JSONWriter.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Parser\Scripts\Plist\Plist.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Plugins\Binding\NativeBinding.Android.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Plugins\Binding\NativeBinding.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\BitConverterEx.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifBitConverter.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifEnums.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifExceptions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifExtendedProperty.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifExtensionMethods.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifFile.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifInterOperability.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifProperty.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifPropertyFactory.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifTag.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\ExifTagFactory.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\JPEGExceptions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\JPEGFile.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\JPEGMarker.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\JPEGSection.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\MathEx.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\Base\GUIModalWindow.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\Base\GUIScrollView.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\GUIDialogs\GUIAlertDialog.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\GUIDialogs\GUIDialog.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\GUIDialogs\GUIPromptDialog.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\GUIExtensions\GUIExtensions.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\GUILayoutUtility\UnityGUILayoutUtility.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\GUIMenuSystem\GUIMainMenu.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\GUIMenuSystem\GUIMenuBase.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UI\Script\GUIMenuSystem\GUISubMenu.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\Coroutine\EditorCoroutine.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\EnumMask\EnumMaskFieldAttribute.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\InspectorButton\InspectorButtonAttribute.Position.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\InspectorButton\InspectorButtonAttribute.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\OnValueChange\ExecuteOnValueChangeAttribute.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\CustomProperty\Regex\RegexAttribute.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\Invoke\EditorInvoke.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\PromptWindow\PromptWindow.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\UnityEditor\Scripts\Scheduler\EditorScheduler.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Demo\Scripts\DownloadTextureDemo.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\Base\Request.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\Base\WebRequest.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\FileDownload\DownloadTextAsset.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\FileDownload\DownloadTexture.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\GET\GETRequest.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Scripts\Request\POST\POSTRequest.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Scripts\Response\WebResponse.cs" />
+     <Compile Include="Assets\VoxelBusters\Common\Utility\Web\Scripts\URL\URL.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Benchmark\Scripts\BenchmarkSample.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Benchmark\Scripts\Profiler.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Demo\Scripts\PropertySerializationDemo\GUI\AttributesSerializationDemo.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Demo\Scripts\PropertySerializationDemo\GUI\Base\SerializationDemo.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Demo\Scripts\PropertySerializationDemo\GUI\IRuntimeSerializableDemo.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Demo\Scripts\PropertySerializationDemo\Sample\SerializationSample.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Demo\Scripts\SceneSerializationDemo\GUI\SceneSerializationControls.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Demo\Scripts\SceneSerializationDemo\GUI\SceneSerializationDemo.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Demo\Scripts\SceneSerializationDemo\Generator\PrimitiveGenerator.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Attributes\NonRuntimeSerializableFieldAttribute.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Attributes\RuntimeSerializableAttribute.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Attributes\RuntimeSerializeFieldAttribute.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Datatypes\Enums\Enums.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Datatypes\SerializationInfo\RuntimeSerializationInfo.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\ArrayList\ArrayListRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\Base\ICollection\ICollectionRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\Base\IDictionary\IDictionaryRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\Base\IList\IListRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\Dictionary\DictionaryRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\HashSet\HashSetRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\Hashtable\HashtableRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\List\ListRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\Queue\QueueRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Collections\Stack\StackRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\Guid\GuidRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\System\TimeSpan\TimeSpanRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Canvas\CanvasRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Collider\BoxCollider2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Collider\CircleCollider2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Collider\Collider2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Collider\EdgeCollider2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Collider\PolygonCollider2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\EventSystem\BaseRaycasterRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\EventSystem\UIBehaviourRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\Components\AnchoredJoint2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\Components\DistanceJoint2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\Components\HingeJoint2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\Components\Joint2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\Components\SliderJoint2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\Components\SpringJoint2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\Components\WheelJoint2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\DataTypes\JointAngleLimits2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\DataTypes\JointMotor2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\DataTypes\JointSuspension2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Joint\DataTypes\JointTranslationLimits2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\PhysicsMaterial\PhysicsMaterial2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\RectTransform\RectTransformRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Rigidbody\Rigidbody2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Sprite\SpriteRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\Sprite\SpriteRendererRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\UI\BaseVertexEffectRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\UI\CanvasScalerRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\UI\GraphicRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\UI\GraphicRaycasterRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\UI\ImageRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\UI\MaskableGraphicRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\UI\OutlineRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\2D\UI\ShadowRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Collider\BoxColliderRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Collider\CapsuleColliderRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Collider\CharacterControllerRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Collider\ColliderRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Collider\MeshColliderRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Collider\SphereColliderRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\Components\CharacterJointRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\Components\ConfigurableJointRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\Components\FixedJointRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\Components\HingeJointRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\Components\JointRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\Components\SpringJointRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\DataTypes\JointDriveRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\DataTypes\JointLimitsRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\DataTypes\JointMotorRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\DataTypes\JointSpringRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\DataTypes\SoftJointLimitRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Joint\DataTypes\SoftJointLimitSpringRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\PhysicMaterial\PhysicMaterialRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Renderer\MeshRendererRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Renderer\SkinnedMeshRendererRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Rigidbody\RigidbodyRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\3D\Texture2D\Texture2DRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Base\BehaviourRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Base\ComponentRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Base\MonoBehaviourRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Base\ObjectRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Base\RendererRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\Camera\CameraRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\GameObject\GameObjectRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\Light\LightRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\Material\MaterialRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\Mesh\Components\MeshRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\Mesh\DataTypes\BoneWeightRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\MeshFilter\MeshFilterRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\NavMesh\Components\NavMeshAgentRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\NavMesh\Components\NavMeshObstacleRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\NavMesh\DataTypes\NavMeshHitRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\Shader\ShaderRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Common\Transform\TransformRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Soap\CheckPointRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Soap\DeathRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Soap\ShowColliderRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Bounds\BoundsRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Color\Color32RSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Color\ColorRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\LayerMask\LayerMaskRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Matrix4x4\Matrix4x4RSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Quaternion\QuaternionRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Rect\RectRSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Vector\Vector2RSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Vector\Vector3RSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Extensions\UnityEngine\Struct\Vector\Vector4RSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Interface\Callbacks\IRuntimeSerializationCallback.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Interface\Callbacks\IRuntimeSerializationEventListener.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Interface\Serializable\IRuntimeSerializable.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Interface\Serializable\IRuntimeSerializableActivator.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Interface\Serializable\IRuntimeSerializableExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Constants\Constants.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\DataTypes\Enums\Enums.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\DataTypes\Extension\RSExtension.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\DataTypes\Field\Field.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\DataTypes\Metadata\SerializationTypeMetadata.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\DataTypes\SerializationEntry\RuntimeSerializationEntry.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Serializer\Binary\BinaryDeserializer.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Serializer\Binary\BinarySerializer.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Serializer\IO\RSBinaryReader.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Serializer\IO\RSBinaryWriter.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Serializer\Object\Base\ObjectReader.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Serializer\Object\Base\ObjectWriter.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Serializer\Object\Format1\ObjectReaderSFV1.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Serializer\Object\Format1\ObjectWriterSFV1.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Utility\Type\SerializationTypeUtil.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Internal\Utility\UnityObject\UnityObjectSerializationUtil.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Manager\RSExtensionManager.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Manager\RSManager.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\UID\UIDSystem.ShortGUID.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\UID\UIDSystem.UnityObjectUIDMap.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\UID\UIDSystem.cs" />
+     <Compile Include="Assets\VoxelBusters\RuntimeSerialization\Scripts\Utility\RSUtility.cs" />
+     <None Include="Assets\JMO Assets\Cartoon FX\Shaders (Mobile)\CFXM_MobileParticleAdd_Alpha8.shader" />
+     <None Include="Assets\EasyTouch\Readme_first.txt" />
+     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Releases Notes.txt" />
+     <None Include="Assets\VoxelBusters\RuntimeSerialization\ReleaseNotes.txt" />
+     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
+     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+     <None Include="Assets\VoxelBusters\RuntimeSerialization\link.xml" />
+     <None Include="Assets\JMO Assets\!JMO Assets Readme.txt" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\VoxelBusters\Common\Utility\ThirdParty\ExifLib\License.txt" />
+     <None Include="Assets\link.xml" />
+     <None Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_WaterWiggle.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Readme.txt" />
+     <None Include="Assets\VoxelBusters\RuntimeSerialization\Demo\Shader\RS_DiffuseBump.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{B77E9E0C-9587-EBF9-0C76-EBC4EF1AABEF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

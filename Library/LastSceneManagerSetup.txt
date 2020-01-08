@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Sence/Level3Section1/Level3Section1.unity
+  isLoaded: 1
+  isActive: 1
